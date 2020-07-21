@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/hlldz/dazzleUP/master/images/dazzleUP.png" alt="dazzleUP" width="300"></p>
 
-A tool that detects the privilege escalation vulnerabilities caused by misconfiguration and missing updates in the Windows operating systems. dazzleUP detects the following vulnerabilities.
+A tool that detects the privilege escalation vulnerabilities caused by misconfigurations and missing updates in the Windows operating systems. dazzleUP detects the following vulnerabilities.
 
 ## Exploit Checks
 
