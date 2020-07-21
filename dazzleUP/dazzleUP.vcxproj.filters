@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\misconf_checks">
+      <UniqueIdentifier>{709db84a-76ca-43f2-b781-18a1c702ed62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\helpers">
+      <UniqueIdentifier>{8d5b59ef-59b0-4582-8869-ef86cbc4b6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\exploit_checks">
+      <UniqueIdentifier>{18a54809-b329-4191-8b59-9ca82b8b18c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\helpers\helpers_and_std_headers.h">
+      <Filter>Header Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\helpers\process_os_info.h">
+      <Filter>Header Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\always_install_elevated.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\credential_manager.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\mcafee_sitelist_xml.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\modifiable_registry_autorun_bins.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\modifiable_registry_autorun_keys.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\modifiable_service_binary.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\modifiable_service_registry.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\path_dll_hijack.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\unattended_install_file.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\misconf_checks\unquoted_service_path.h">
+      <Filter>Header Files\misconf_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\dcom_ntlm_reflection.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\update_checker.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2020_0796.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2020_0787.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1405.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_0841.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_0836.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1064.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1130.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1253.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1315.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1385.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\exploit_checks\CVE_2019_1388.h">
+      <Filter>Header Files\exploit_checks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
