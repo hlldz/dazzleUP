@@ -65,7 +65,7 @@ void exploit_checks() {
         std::cout << "\n\n[!] Target system build number is not supported by dazzleUP, passing missing updates controls...\n";
     }
 
-};
+}
 
 void misconf_checks() {
 
@@ -81,7 +81,7 @@ void misconf_checks() {
     unattendedInstallFile();
     siteListXMLFile();
 
-};
+}
 
 int main() {
     
