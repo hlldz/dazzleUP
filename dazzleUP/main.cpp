@@ -43,18 +43,19 @@ void exploit_checks() {
 
     if (osReleaseId() >= 1809) {
         if (isUpdatesCheckable() == TRUE) {
-            getInstalledUpdates();
-            CVE_2019_0836();
-            CVE_2019_0841();
-            CVE_2019_1064();
-            CVE_2019_1130();
-            CVE_2019_1253();
-            CVE_2019_1385();
-            CVE_2019_1388();
-            CVE_2019_1405();
-            CVE_2019_1315();
-            CVE_2020_0787();
-            CVE_2020_0796();
+            if (getInstalledUpdates() == TRUE) {
+                CVE_2019_0836();
+                CVE_2019_0841();
+                CVE_2019_1064();
+                CVE_2019_1130();
+                CVE_2019_1253();
+                CVE_2019_1385();
+                CVE_2019_1388();
+                CVE_2019_1405();
+                CVE_2019_1315();
+                CVE_2020_0787();
+                CVE_2020_0796();
+            }            
         }
         else {
             std::cout << "\n\n[!] Your process running under " << detectProcessUser() << " privilege. Swicth to normal user. I can't check installed updates...\n";
