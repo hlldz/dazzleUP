@@ -74,14 +74,16 @@ std::wstring regServiceQuery(LPCWSTR serviceRegName, LPCWSTR serviceKeyName) {
     serviceName += serviceRegName;
 
     wchar_t regEntryValue[255];
-    DWORD BufferSize = 8192;
+    DWORD BufferSize = sizeof(regEntryValue);  //8192;
     DWORD dwRet;
     dwRet = RegGetValue(HKEY_LOCAL_MACHINE, serviceName.c_str(), serviceKeyName, RRF_RT_ANY, NULL, (PVOID)&regEntryValue, &BufferSize);
 
     if (dwRet == 0) {
+        RegCloseKey(HKEY_LOCAL_MACHINE);
         return regEntryValue;
     }
     else {
+        RegCloseKey(HKEY_LOCAL_MACHINE);
         return L"FALSE";
     }
 }
